@@ -188,7 +188,7 @@ a {
 .feed-nav {
     position: fixed;
     width: 100%;
-    height: 7.5rem;
+    height: 5rem;
     background-color: var(--body-bg-color);
     display: flex;
     justify-content: center;
@@ -202,8 +202,8 @@ a {
 
 .icons a {
     text-decoration: none;
-    margin-right: 7rem;
-    font-size: 2.5rem;
+    margin-right: 5rem;            
+    font-size: 1.6rem;                 
     color: var(--border-color);
 }
 
@@ -218,8 +218,8 @@ a {
 }
 
 .search-bar input {
-    width: 35rem;
-    height: 3rem;
+    width: 28rem;
+    height: 2.5rem;
     border: 0.1rem solid var(--text-white);
     border-radius: 3rem;
     background-color: var(--text-white);
@@ -239,15 +239,15 @@ a {
 }
 
 .user {
-    margin-left: 3rem;
+    margin-left: 5rem;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .user-img-wrapper {
-    width: 4rem;
-    height: 4rem;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .user-img-wrapper img {
@@ -260,13 +260,13 @@ a {
 .user-link {
     margin: 0 1rem;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     color: var(--lead);
 }
 
 .user i {
     color: var(--border-color);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 
