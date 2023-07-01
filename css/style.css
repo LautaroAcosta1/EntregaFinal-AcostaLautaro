@@ -181,7 +181,7 @@ a {
 
 
 .feed-bg {
-    background-color: var(--text-white);
+    background-color: lightsteelblue;
 }
 
 .feed-page {
@@ -273,6 +273,78 @@ a {
     font-size: 1.2rem;
 }
 
+
+/* -------------------- FEED (HOME) -------------------- */
+
+
+.feed-content {
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr)
+    35rem 30rem minmax(5rem, 1fr);
+    grid-template-rows: repeat(2, min-content);
+    padding-top: 4.2rem;
+}
+
+.feed-header {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: var(--text-white);
+    margin-top: 1.5rem;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.1rem solid gray;
+}
+
+.header-top h4 {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+}
+
+.header-top i {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin: 0.5rem;
+}
+
+.header-post {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 0.1rem solid gray;
+}
+
+.header-img-wrapper {
+    width: 7.2rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.header-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.header-post input {
+    width: 35rem;
+    height: 3rem;
+    border: 0.1rem solid --blue;
+    border-radius: 3rem;
+    background-color: var(--text-white);
+    padding: 0.4rem 1.5rem;
+}
+
+.header-post i {
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin: 1rem;
+}
 
 
 
