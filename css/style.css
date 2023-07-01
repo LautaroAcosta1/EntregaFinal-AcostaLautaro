@@ -24,7 +24,7 @@
 /* -------------------- INICIO DE SESION -------------------- */
 
 
-body {
+.index-bg {
     background-color: var(--body-bg-color);
     color: var(--text-light-gray);
     font-family:'Poppins', sans-serif;
@@ -34,8 +34,8 @@ body {
     overflow-x: hidden;
 }
 
-body::after,
-body::before {
+.index-bg::after,
+.index-bg::before {
     content: "";
     position: fixed;
     height: 400px;
@@ -45,13 +45,13 @@ body::before {
     filter: blur(150px);
     opacity: 0.5;
 }
-body::before {
+.index-bg::before {
     background-color: var(--blue);
     left: 0;
     bottom: 0;
     transform: translate(-50%);
 }
-body::after {
+.index-bg::after {
     background-color: var(--violet);
     right: 0;
     top: 0;
@@ -177,8 +177,12 @@ a {
 }
 
 
-/* -------------------- FEED -------------------- */
+/* -------------------- FEED (BARRA DE NAVEGACION) -------------------- */
 
+
+.feed-bg {
+    background-color: var(--text-white);
+}
 
 .feed-page {
     width: 100%;
