@@ -279,8 +279,9 @@ a {
 
 .feed-content {
     display: grid;
-    grid-template-columns: minmax(5rem, 1fr)
-    40rem 25rem minmax(5rem, 1fr);
+    grid-template-columns: minmax(5rem, 6fr)
+    35rem
+    minmax(5rem, 6fr);
     grid-template-rows: repeat(2, min-content);
     padding-top: 5rem;
 }
@@ -343,20 +344,42 @@ a {
     margin: 1rem;
 }
 
-.posts {
+.posts1 {
     grid-column: 2/3;
     grid-row: 2/-1;
     background-color: var(--text-white);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    border-top-left-radius: 0.6rem;
-    border-top-right-radius: 0.6rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    border-bottom: 0.1rem solid gray;
 }
+
+.posts2 {
+    grid-column: 2/3;
+    grid-row: 3/-1;
+    background-color: var(--text-white);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    border-bottom: 0.1rem solid gray;
+}
+
+.posts3 {
+    grid-column: 2/3;
+    grid-row: 4/-0;
+    background-color: var(--text-white);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.6rem;
+    border-bottom: 0.1rem solid gray;
+}
+
+
 
 .post {
     display: flex;
     padding: 1.5rem;
-    border-bottom: 0.1rem solid grey;
+    border-radius: 0.6rem;
 }
 
 .post-content {
@@ -464,10 +487,13 @@ a {
 .follow {
     position: fixed;
     top: 6rem;
-    left: 62%;
+    left: 72%;
     background-color: #ffffff;
-    width: 28rem;
+    width: 22.8rem;
+    height: 24.3rem;
     border-radius: 0.6rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .follow-heading {
@@ -481,6 +507,7 @@ a {
     align-items: center;
     padding: 1.5rem;
     border-bottom: 0.1rem solid gray;
+    border-radius: 1rem;
 }
 
 .follow-user-img {
@@ -527,7 +554,7 @@ a {
 }
 
 .follow-footer {
-    background-color: #eef4f4;
+    background-color: lightsteelblue;
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
 }
@@ -540,7 +567,7 @@ a {
 
 .follow-footer a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.78rem;
     color: grey;
     margin: 0.5rem;
 }
