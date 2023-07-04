@@ -177,7 +177,7 @@ a {
 }
 
 
-/* -------------------- FEED (BARRA DE NAVEGACION) -------------------- */
+/* -------------------- FEED (BAR NAVEGATION) -------------------- */
 
 
 .feed-bg {
@@ -274,7 +274,7 @@ a {
 }
 
 
-/* -------------------- FEED (HOME) -------------------- */
+/* -------------------- FEED (MIDDLE HOME) -------------------- */
 
 
 .feed-content {
@@ -482,6 +482,10 @@ a {
     margin-right: 4rem;
 }
 
+
+/* -------------------- FEED (RIGHT HOME) -------------------- */
+
+
 .follow {
     position: fixed;
     top: 6rem;
@@ -569,6 +573,10 @@ a {
     color: grey;
     margin: 0.5rem;
 }
+
+
+/* -------------------- FEED (LEFT HOME) -------------------- */
+
 
 .online {
     position: fixed;
