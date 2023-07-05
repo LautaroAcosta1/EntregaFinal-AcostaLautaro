@@ -5,6 +5,8 @@
     --white: hsl(0, 0%, 100%);
     --rgb-green: rgba(0, 255, 0);
     --green: hsl(162, 45%, 56%);
+    --rgb-light-blue: rgba(0, 170, 228);
+    --light-blue: #81B9FF;
     --blue: hsl(220, 85%, 57%);
     --violet: hsl(272, 92%, 32%);
     --lead: hsl(162, 2%, 56%);
@@ -182,7 +184,8 @@ a {
 
 
 .feed-bg {
-    background-color: var(--green);
+    background-color: var(--light-blue);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='247' height='247' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23E0E0E0' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2381B9FF'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .feed-page {
@@ -213,7 +216,7 @@ a {
 }
 
 .icons .active {
-    color: var(--blue);
+    color: var(--rgb-light-blue);
 }
 
 .search-bar {
@@ -233,7 +236,7 @@ a {
 
 .search-bar input:focus {
     background-color: var(--white);
-    border-color: var(--blue);
+    border-color: var(--rgb-light-blue);
 }
 
 .search-bar i {
@@ -333,7 +336,7 @@ a {
 .header-post input {
     width: 35rem;
     height: 3rem;
-    border: 0.1rem solid var(--blue);
+    border: 0.1rem solid var(--rgb-light-blue);
     border-radius: 3rem;
     background-color: var(--white);
     padding: 0.4rem 1.5rem;
@@ -341,7 +344,7 @@ a {
 
 .header-post i {
     font-size: 1.3rem;
-    color: var(--blue);
+    color: var(--rgb-light-blue);
     margin: 1rem;
 }
 
@@ -440,7 +443,7 @@ a {
 
 .post-user-info i {
     font-size: 1.2rem;
-    color: var(--blue);
+    color: var(--rgb-light-blue); 
     margin-right: 0.3rem;
 }
 
@@ -451,7 +454,7 @@ a {
     border-radius: 50%;
 }
 
-´.post-user-info span {
+.post-user-info span {
     font-size: 1.2rem;
 }
 
@@ -538,9 +541,9 @@ a {
     margin-left: auto;
     width: 6rem;
     background-color: var(--white);
-    color: var(--blue);
+    color: var(--rgb-light-blue);
     padding: 0.5rem 0.3rem;
-    border: 0.1rem solid var(--blue);
+    border: 0.1rem solid var(--rgb-light-blue);
     border-radius: 2rem;
     font-size: 0.9rem;
     cursor: pointer;
@@ -552,12 +555,11 @@ a {
 
 .follow-link a {
     text-decoration: none;
-    color: var(--blue);
+    color: var(--gray);
     font-size: 1.2rem;
 }
 
 .follow-footer {
-    background-color: var(--green);
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
 }
@@ -581,9 +583,9 @@ a {
 
 .online {
     position: fixed;
+    background-color: var(--white);
     top: 5rem;
     left: 13px;
-    background-color: var(--white);
     width: 22.8rem;
     height: 25.5rem;
     border-radius: 0.6rem;
