@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing up</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="funciones.js"></script>
 </head>
 <body class="index-bg">
     <section class="form-main">
         <div class="form-content">
             <div class="box">
                 <h3>Crear una cuenta</h3>
-                <form action="">
+                <form>
                     <div class="input-box">
-                        <input type="text" placeholder="Nombre Completo" class="input-control">
+                        <input type="text" id="usuarioNuevoIngresado" required placeholder="Nombre de usuario" class="input-control">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Email" class="input-control">
+                        <input type="text" id="emailIngresado" required placeholder="Email" class="input-control">
                     </div>
                     <div class="input-box">
-                        <input type="password" placeholder="password" class="input-control">
+                        <input type="password" id="claveNuevaIngresada" required placeholder="Contraseña" class="input-control">
                     </div>
-                    <button type="submit" class="btn">Crear cuenta</button>
+                    <button type="submit" class="btn" id="botonCrearCuenta">Crear cuenta</button>
                 </form>
                 <p>¿Ya tienes una cuenta? <a href="index.html" class="gradient-text">Iniciar Sesión</a></p>
             </div>
         </div>
     </section>
+
+    <script src="funciones.js"></script>
+
 </body>
 </html>
