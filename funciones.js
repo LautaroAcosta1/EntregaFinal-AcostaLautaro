@@ -44,7 +44,29 @@ function crearCuenta() {
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
+        window.location.href = "index.html";
         alert("Se ha registrado con exito.");
+    }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    let botonEnviar = document.getElementById("botonEnviarCodigo");
+    botonEnviar.addEventListener("click", enviarCodigo);
+});
+
+function enviarCodigo() {
+    const listaUsuarios = listaUsuariosDeLocalStorage();
+    const emailIngresado = document.getElementById("emailIngresado").value;
+
+    let emailCorrecto = listaUsuarios.some((user) => user.email === emailIngresado);
+
+    if (emailCorrecto) {
+        // Se envia un mail en el cual pueda cambiar cambiar su contraseña.
+        alert("Verifique su gmail y siga los pasos dados para recuperar su cuenta.");
+    } else {
+        alert("Email incorrecto. Vuelva a intentarlo.");
     }
 }
 
