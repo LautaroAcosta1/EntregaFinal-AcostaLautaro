@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     botonEnviar.addEventListener("click", enviarCodigo);
 });
 
+// Se verifica que el email ingresado por la persona sea correcto para enviar un mail.
 function enviarCodigo() {
     const listaUsuarios = listaUsuariosDeLocalStorage();
     const emailIngresado = document.getElementById("emailIngresado").value;
