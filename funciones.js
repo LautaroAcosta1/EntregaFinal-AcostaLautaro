@@ -15,9 +15,9 @@ function iniciarSesion() {
     const datosCorrectos = listaUsuarios.find((user) => user.usuario === usuarioIngresado && user.clave === claveIngresada);
 
     if (datosCorrectos) {
-        alert("inicio exitoso.")
+        alert("Inicio exitoso. ¡Bienvenido" + " " + usuarioIngresado + "!")
     } else {
-        alert("inicio invalido.")
+        alert("Usuario o contraseña incorrecta. Vuelva a intentarlo.")
     }
 }
 
@@ -37,10 +37,10 @@ function crearCuenta() {
 
     let nuevoUsuario = {usuario: usuarioNuevoIngresado, clave: claveNuevaIngresada, email: emailIngresado};
 
-    let usuarioExistente = listaUsuarios.some((user) => user.usuario === usuarioNuevoIngresado);
+    let usuarioExistente = listaUsuarios.some((user) => user.usuario === usuarioNuevoIngresado || user.email === emailIngresado);
 
     if (usuarioExistente) {
-        alert("El nombre de usuario ya existe. Vuelva a intentarlo.")
+        alert("El nombre de usuario o email ingresado ya existe. Vuelva a intentarlo.")
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
