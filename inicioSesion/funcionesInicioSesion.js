@@ -1,5 +1,3 @@
-// ------------------------------ funciones ------------------------------
-
 document.addEventListener("DOMContentLoaded", function() {
     let botonIniciar = document.getElementById("botonIniciarSesion");
     botonIniciar.addEventListener("click", iniciarSesion);
@@ -15,9 +13,10 @@ function iniciarSesion() {
     const datosCorrectos = listaUsuarios.find((user) => user.usuario === usuarioIngresado && user.clave === claveIngresada);
 
     if (datosCorrectos) {
-        alert("Inicio exitoso. ¡Bienvenido" + " " + usuarioIngresado + "!")
+        window.location.href = "../inicio/feed.html";
+        alert("Inicio exitoso. ¡Bienvenido" + " " + usuarioIngresado + "!");
     } else {
-        alert("Usuario o contraseña incorrecta. Vuelva a intentarlo.")
+        alert("Usuario o contraseña incorrecta. Vuelva a intentarlo.");
     }
 }
 
@@ -40,7 +39,7 @@ function crearCuenta() {
     let usuarioExistente = listaUsuarios.some((user) => user.usuario === usuarioNuevoIngresado || user.email === emailIngresado);
 
     if (usuarioExistente) {
-        alert("El nombre de usuario o email ingresado ya existe. Vuelva a intentarlo.")
+        alert("El nombre de usuario o email ingresado ya existe. Vuelva a intentarlo.");
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
