@@ -9,6 +9,7 @@
     --light-blue: #81B9FF;
     --blue: hsl(220, 85%, 57%);
     --violet: hsl(272, 92%, 32%);
+    --red: rgb(255, 0, 0);
     --lead: hsl(162, 2%, 56%);
     --light-gray: hsla(0, 0%, 100%, 0.25);
     --gray: hsla(0, 0%, 36%, 0.711);
@@ -625,6 +626,12 @@ a {
     border-bottom: 0.1rem solid var(--gray);
     border-bottom-left-radius: 0.6rem;
     border-bottom-right-radius: 0.6rem;
+    transition: background-color 0.3s ease;
+}
+
+.online-contacts:hover {
+    background-color: var(--lead);
+    cursor: pointer;
 }
 
 .online-contact-img {
@@ -656,7 +663,7 @@ a {
 .green-point {
     height: 10px;
     width: 10px;
-    background-color: var(--rgb-green);
+    background-color: var(--red);
     border-radius: 50%;
     position: fixed;
     left: 21.5%;
@@ -673,6 +680,7 @@ a {
 
 
 /* -------------------- BUSCADOR DE USUARIOS (FEED)  -------------------- */
+
 
 #perfilUsuario {
     color: black;
@@ -745,4 +753,57 @@ a {
     border-bottom-left-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     padding: 0.5rem;
+}
+
+
+/* -------------------- NOTIFICACIONES (FEED)  -------------------- */
+
+
+#noti-fondo {
+    position: static;
+    background-color: var(--dark-gray);
+    top: 5rem;
+    left: 13px;
+    width: 22.8rem;
+    height: 33rem;
+    margin-bottom: 30px;
+    border-radius: 0.6rem;
+}
+
+#noti-fondo .notificacionesDePrueba {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    border-bottom: 0.1rem solid var(--gray);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+#noti-fondo .notificacionesDePrueba:hover {
+    background-color: var(--lead);
+    cursor: pointer;
+}
+
+#noti-fondo .notificacionesDePrueba img {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 0.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: groove;
+    border-width: 1px;
+    border-color: var(--gray);
+}
+
+#noti-fondo .notificacionesDePrueba p {
+    font-size: 1rem;
+    color: var(--white);
 }

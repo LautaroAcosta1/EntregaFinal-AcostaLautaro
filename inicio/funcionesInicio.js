@@ -1,3 +1,44 @@
+// ------------------------------ NOTIFICACIONES ------------------------------
+
+document.addEventListener("DOMContentLoaded", function() {
+    let botonNoti = document.getElementById("botonNoti");
+    botonNoti.addEventListener("click", notificaciones);
+});
+
+function notificaciones() {
+    let div = document.getElementById("notificaciones");
+
+    const div2 = document.createElement("div");
+    div.innerHTML =`<div id="noti-fondo">
+                        <div class="notificacionesDePrueba">
+                            <img src="${"../img/duki.jpeg"}" width="100px">
+                            <p><b>duki.ssj</b> le ha dado Me gusta a tu publicación.</p>
+                        </div>
+                        <div class="notificacionesDePrueba">
+                            <img src="${"../img/coscu.jpeg"}" width="100px">
+                            <p><b>coscu_10</b> ha solicitado seguirte.</p>
+                        </div>
+                        <div class="notificacionesDePrueba">
+                            <img src="${"../img/maria.jpeg"}" width="100px">
+                            <p><b>maria.becerra</b> ha solicitado seguirte.</p>
+                        </div>
+                        <div class="notificacionesDePrueba">
+                            <img src="${"../img/ibai.jpeg"}" width="100px">
+                            <p><b>ibai_llanos</b> le ha dado Me gusta a tu publicación.</p>
+                        </div>
+                        <div class="notificacionesDePrueba">
+                            <img src="${"../img/messi2.jpeg"}" width="100px">
+                            <p><b>lionel.messi10</b> ha comentado tu publicación.</p>
+                        </div>
+                    </div>`
+    div.append(div2);
+}
+
+
+
+
+// ------------------------------ BARRA DE BUSCADOR ------------------------------
+
 // Se ingresa al archivo .json y se recorre dicho archivo para verificar si el usuario que esta siendo buscado
 // es existente. Si es asi, se ofrecen los datos para acceder a su perfil.
 function buscarPerfil(usuario){
@@ -11,8 +52,8 @@ function buscarPerfil(usuario){
                 if (user.usuario === usuario){
                     document.getElementById("busquedaIngresada").classList.add("valid");
 
-                    const ul = document.createElement("ul")
-                    ul.innerHTML = `<img src= "${user.imgPerfil}">
+                    const ul = document.createElement("ul");
+                    ul.innerHTML = `<img src="${user.imgPerfil}">
                                     <div class="datosUsuario">
                                         <h4>${user.nombre}</h4>
                                         <p>@${user.usuario}</p>
@@ -43,11 +84,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function buscarUsuario() {
     const inputElement = document.getElementById("busquedaIngresada");
     const usuarioIngresado = inputElement.value;
-    let div = document.getElementById("mostrarPerfil")
 
     if (usuarioIngresado.trim() !== "") {
         buscarPerfil(usuarioIngresado)
-    } 
+    }
 }
 
 
