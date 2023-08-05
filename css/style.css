@@ -207,16 +207,16 @@ a {
     align-items: center;
 }
 
-.icons i {
+.icons a {
     text-decoration: none;
     margin-right: 5rem;            
     font-size: 1.55rem;
     color: var(--light-gray);
     cursor: pointer;
-    transition: color 0.3s ease;              
+    transition: color 0.3s ease;
 }
 
-.icons i:hover {
+.icons a:hover {
     color: var(--rgb-light-blue);
 }
 
@@ -224,20 +224,32 @@ a {
     display: flex;
     align-items: center;
     position: relative;
+    right: 81px;
+    margin-left: 130px;
 }
 
 .search-bar input {
     width: 28rem;
     height: 2.5rem;
-    border: 0.1rem solid var(--white);
+    border: 0.1rem solid var(--black);
     border-radius: 3rem;
-    background-color: var(--white);
+    background-color: var(--light-gray);
     padding-left: 5rem;
+    color: var(--white);
+}
+
+.search-bar input.valid {
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 0.1rem solid var(--black);
+    background-color: var(--light-gray);
 }
 
 .search-bar input:focus {
-    background-color: var(--white);
-    border-color: var(--rgb-light-blue);
+    background-color: var(--light-gray);
+    color: var(--white);
 }
 
 .search-bar button {
@@ -654,4 +666,83 @@ a {
     position: fixed;
     left: 23%;
     color: var(--white);
+}
+
+
+
+
+
+/* -------------------- BUSCADOR DE USUARIOS (FEED)  -------------------- */
+
+#perfilUsuario {
+    color: black;
+    text-decoration: none;
+}
+
+#mostrarPerfil {
+    position: fixed;
+    background-color: var(--light-gray);
+    backdrop-filter: var(--blur);
+    width: 28rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    top: 54.4px;
+    margin-left: 3.5rem;
+}
+
+#mostrarPerfil:hover {
+    background-color: var(--lead);
+    cursor: pointer;
+}
+
+#mostrarPerfil ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--gray);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+#mostrarPerfil ul img {
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-right: 0.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: groove;
+    border-width: 1px;
+    border-color: var(--gray);
+}
+
+#mostrarPerfil .datosUsuario {
+    display: flex;
+    flex-direction: column;
+}
+
+#mostrarPerfil .datosUsuario h4 {
+    font-size: 1.05rem;
+}
+
+#mostrarPerfil .datosUsuario p {
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+#mostrarPerfil .mensajeError {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-bottom: 0.1rem solid var(--gray);
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+    padding: 0.5rem;
 }
