@@ -13,7 +13,7 @@ function iniciarSesion() {
     const datosCorrectos = listaUsuarios.find((user) => user.usuario === usuarioIngresado && user.clave === claveIngresada);
 
     if (datosCorrectos) {
-        window.location.href = "../inicio/feed.html";
+        window.location.href = "../feed.html";
         alert("Inicio exitoso. ¡Bienvenido" + " " + usuarioIngresado + "!");
     } else {
         alert("Usuario o contraseña incorrecta. Vuelva a intentarlo.");
