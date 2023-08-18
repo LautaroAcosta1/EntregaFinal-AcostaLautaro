@@ -9,14 +9,17 @@ function iniciarSesion() {
     const listaUsuarios = listaUsuariosDeLocalStorage();
     const usuarioIngresado = document.getElementById("usuarioIngresado").value;
     const claveIngresada = document.getElementById("claveIngresada").value;
-
     const datosCorrectos = listaUsuarios.find((user) => user.usuario === usuarioIngresado && user.clave === claveIngresada);
 
     if (datosCorrectos) {
         window.location.href = "../inicio/feed.html";
-        alert("Inicio exitoso. ¡Bienvenido" + " " + usuarioIngresado + "!");
+        alert("")
     } else {
-        alert("Usuario o contraseña incorrecta. Vuelva a intentarlo.");
+        Swal.fire(
+            'Debes completar el inicio de sesion.',
+            '',
+            'error'
+        )
     }
 }
 
@@ -33,18 +36,24 @@ function crearCuenta() {
     const usuarioNuevoIngresado = document.getElementById("usuarioNuevoIngresado").value;
     const emailIngresado = document.getElementById("emailIngresado").value;
     const claveNuevaIngresada = document.getElementById("claveNuevaIngresada").value;
-
     let nuevoUsuario = {usuario: usuarioNuevoIngresado, clave: claveNuevaIngresada, email: emailIngresado};
-
     let usuarioExistente = listaUsuarios.some((user) => user.usuario === usuarioNuevoIngresado || user.email === emailIngresado);
 
     if (usuarioExistente) {
-        alert("El nombre de usuario o email ingresado ya existe. Vuelva a intentarlo.");
+        Swal.fire(
+            'El usuario ya existe..',
+            '',
+            'error'
+        )
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
         window.location.href = "index.html";
-        alert("Se ha registrado con exito.");
+        Swal.fire(
+            'Se ha creado con exito.',
+            '',
+            'success'
+        );
     }
 }
 
@@ -59,14 +68,20 @@ document.addEventListener("DOMContentLoaded", function() {
 function enviarCodigo() {
     const listaUsuarios = listaUsuariosDeLocalStorage();
     const emailIngresado = document.getElementById("emailIngresado").value;
-
     let emailCorrecto = listaUsuarios.some((user) => user.email === emailIngresado);
-
     if (emailCorrecto) {
         // Se envia un mail en el cual pueda cambiar cambiar su contraseña.
-        alert("Verifique su gmail y siga los pasos dados para recuperar su cuenta.");
+        Swal.fire(
+            'Verifique su mail y siga los pasos dados.',
+            '',
+            'success'
+        );
     } else {
-        alert("Email incorrecto. Vuelva a intentarlo.");
+        Swal.fire(
+            'Email incorrecto.',
+            '',
+            'error'
+        );
     }
 }
 
@@ -77,6 +92,15 @@ function listaUsuariosDeLocalStorage() {
     const usuariosJSON = localStorage.getItem("listaUsuarios");
     return usuariosJSON ? JSON.parse(usuariosJSON) : [];
 }
+
+
+
+
+
+
+
+
+
 
 
 
