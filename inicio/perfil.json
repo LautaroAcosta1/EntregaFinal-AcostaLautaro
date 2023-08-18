@@ -1,75 +1,16 @@
 [
-    {"imgPerfil": "../img/tiago.jpeg",
-    "usuario": "tiago_pzk", 
-    "nombre": "Tiago Pzk", 
-    "clave": "ti12345",
-    "email": "tiago.pzk2000@gmail.com"},
-
-    {"imgPerfil": "../img/german.jpeg",
-    "usuario": "holasoygerman", 
-    "nombre": "German Garmendia", 
-    "clave": "234534",
-    "email": "holasoygerman43@gmail.com"},
-
-    {"imgPerfil": "../img/duki.jpeg",
-    "usuario": "duki.ssj", 
-    "nombre": "Mauro Lombardo", 
-    "clave": "d54ki34",
-    "email": "dukiii_345lombardo@gmail.com"},
-
-    {"imgPerfil": "../img/nicky.jpeg", 
-    "usuario": "nickyjam07", 
-    "nombre": "Nicky Jam", 
-    "clave": "NCK432",
-    "email": "nicky.jam.234@gmail.com"},
-
-    {"imgPerfil": "../img/marcelo.jpeg", 
-    "usuario": "mar_tinelli",
-    "nombre": "Marcelo Tinelli", 
-    "clave": "Mar234cE",
-    "email": "tinelli_marcelo234@gmail.com"},
-
-    {"imgPerfil": "../img/china.jpeg", 
-    "usuario": "china_suarez", 
-    "nombre": "Maria Eugenia", 
-    "clave": "45645623",
-    "email": "maria435.china@gmail.com"},
-
-    {"imgPerfil": "../img/ibai.jpeg", 
-    "usuario": "ibai_llanos", 
-    "nombre": "Ibai Llanos", 
-    "clave": "i345b453",
-    "email": "ibai.llanos_6755@gmail.com"},
-
-    {"imgPerfil": "../img/messi2.jpeg", 
-    "usuario": "lionel.messi10", 
-    "nombre": "Lionel Messi", 
-    "clave": "3541210",
-    "email": "lionel.messi.342@gmail.com"},
-
-    {"imgPerfil": "../img/tevez2.jpeg", 
-    "usuario": "carlos_tevez21", 
-    "nombre": "Carlos Tevez", 
-    "clave": "54531",
-    "email": "tevez.cabj2345@gmail.com"},
-
-    {"imgPerfil": "../img/maria.jpeg", 
-    "usuario": "maria.becerra", 
-    "nombre": "Maria Becerra", 
-    "clave": "m3456A54R",
-    "email": "maria.becerra24@gmail.com"},
-
-    {"imgPerfil": "../img/lit.jpeg", 
-    "usuario": "litt_killah09", 
-    "nombre": "Lit Killah", 
-    "clave": "LIT123000",
-    "email": "lit_killah.arg32@gmail.com"},
-
-    {"imgPerfil": "../holaimg/coscu.jpeg", 
-    "usuario": "coscu_10", 
-    "nombre": "Martin Disalvo", 
-    "clave": "COS345cu",
-    "email": "coscu_strm-453@gmail.com"}
+    {"imgPerfil": "../img/tiago.jpeg", "usuario": "tiago_pzk", "nombre": "Tiago Pzk"},
+    {"imgPerfil": "../img/german.jpeg", "usuario": "holasoygerman", "nombre": "German Garmendia"},
+    {"imgPerfil": "../img/duki.jpeg", "usuario": "duki.ssj", "nombre": "Mauro Lombardo"},
+    {"imgPerfil": "../img/nicky.jpeg", "usuario": "nickyjam07", "nombre": "Nicky Jam"},
+    {"imgPerfil": "../img/marcelo.jpeg", "usuario": "mar_tinelli", "nombre": "Marcelo Tinelli"},
+    {"imgPerfil": "../img/china.jpeg", "usuario": "china_suarez", "nombre": "Maria Eugenia"},
+    {"imgPerfil": "../img/ibai.jpeg", "usuario": "ibai_llanos", "nombre": "Ibai Llanos"},
+    {"imgPerfil": "../img/messi2.jpeg", "usuario": "lionel.messi10", "nombre": "Lionel Messi"},
+    {"imgPerfil": "../img/tevez2.jpeg", "usuario": "carlos_tevez21", "nombre": "Carlos Tevez"},
+    {"imgPerfil": "../img/maria.jpeg", "usuario": "maria.becerra", "nombre": "Maria Becerra"},
+    {"imgPerfil": "../img/lit.jpeg", "usuario": "litt_killah09", "nombre": "Lit Killah"},
+    {"imgPerfil": "../holaimg/coscu.jpeg", "usuario": "coscu_10", "nombre": "Martin Disalvo"}
 ]
 
 

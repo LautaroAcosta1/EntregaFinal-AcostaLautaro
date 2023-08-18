@@ -5,36 +5,34 @@ document.addEventListener("DOMContentLoaded", function() {
     botonNoti.addEventListener("click", notificaciones);
 });
 
-// Se crea un div con notificaciones de prueba.
 function notificaciones() {
     let div = document.getElementById("notificaciones");
 
     const div2 = document.createElement("div");
-    div.innerHTML =`<div class="notiFondo">
+    div.innerHTML =`<div id="noti-fondo">
                         <div class="notificacionesDePrueba">
-                            <img src="../img/duki.jpeg">
+                            <img src="${"../img/duki.jpeg"}" width="100px">
                             <p><b>duki.ssj</b> le ha dado Me gusta a tu publicación.</p>
                         </div>
                         <div class="notificacionesDePrueba">
-                            <img src="../img/coscu.jpeg">
+                            <img src="${"../img/coscu.jpeg"}" width="100px">
                             <p><b>coscu_10</b> ha solicitado seguirte.</p>
                         </div>
                         <div class="notificacionesDePrueba">
-                            <img src="../img/maria.jpeg">
+                            <img src="${"../img/maria.jpeg"}" width="100px">
                             <p><b>maria.becerra</b> ha solicitado seguirte.</p>
                         </div>
                         <div class="notificacionesDePrueba">
-                            <img src="../img/ibai.jpeg">
+                            <img src="${"../img/ibai.jpeg"}" width="100px">
                             <p><b>ibai_llanos</b> le ha dado Me gusta a tu publicación.</p>
                         </div>
                         <div class="notificacionesDePrueba">
-                            <img src="../img/messi2.jpeg">
+                            <img src="${"../img/messi2.jpeg"}" width="100px">
                             <p><b>lionel.messi10</b> ha comentado tu publicación.</p>
                         </div>
                     </div>`
     div.append(div2);
 }
-
 
 
 
@@ -93,20 +91,10 @@ function buscarUsuario() {
 }
 
 
-document.addEventListener("click", ocultarBuscador);
+document.addEventListener("click", ocultarContenido);
 
 // Se elimina el contenido de "mostrarPerfil" para seguir navegando.
-function ocultarBuscador() {
+function ocultarContenido() {
     document.getElementById("mostrarPerfil").innerHTML = ``;
     document.getElementById("busquedaIngresada").classList.remove("valid");
 }
-
-
-
-
-
-// ------------------------------ NOMBRE DE PERFIL ------------------------------
-
-const usuarioIngresado = document.getElementById("usuarioIngresado");
-
-console.log(usuarioIngresado)
