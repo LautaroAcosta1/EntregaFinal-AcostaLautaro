@@ -48,7 +48,7 @@ function crearCuenta() {
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
         Swal.fire(
             'Se ha creado con exito.',
             '',
