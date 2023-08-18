@@ -40,20 +40,12 @@ function crearCuenta() {
     let usuarioExistente = listaUsuarios.some((user) => user.usuario === usuarioNuevoIngresado || user.email === emailIngresado);
 
     if (usuarioExistente) {
-        Swal.fire(
-            'El usuario ya existe..',
-            '',
-            'error'
-        )
+        alert("El usuario ya existe.")
     } else {
         listaUsuarios.push(nuevoUsuario);
         localStorage.setItem("listaUsuarios", JSON.stringify(listaUsuarios));
         window.location.href = "../index.html";
-        Swal.fire(
-            'Se ha creado con exito.',
-            '',
-            'success'
-        );
+        alert("Se ha creado con exito.")
     }
 }
 
